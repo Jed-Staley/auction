@@ -1,6 +1,6 @@
-const { emitPickup } = require('./handler');
+const { emitPickup } = require('.');
 
-const store = '1-206-flowers';
+const store = '1-800-flowers';
 
 setInterval(() => {
   const order = {
@@ -10,6 +10,4 @@ setInterval(() => {
     address: '123 Main St'
   };
   emitPickup(order);
-}, 2000);
-
-
+}, 3000);
