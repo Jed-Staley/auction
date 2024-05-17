@@ -4,7 +4,7 @@ const { sellItem } = require('./'); // Assuming emitPickup is exported from the 
 const lorem = new Chance();
 
 const itemPosting = () => {
-  const startingPrice = lorem.integer({ min: 10, max: 100 });
+  let startingPrice = lorem.dollar({ max: 100 });
   return {
     auctionId: lorem.guid(),
     item: lorem.sentence({ words: 3 }), // Generate a random item description
@@ -18,6 +18,6 @@ const itemPosting = () => {
 setInterval(() => {
   const item = itemPosting();
   sellItem(item);
-}, 3000);
+}, 30000);
 
 
