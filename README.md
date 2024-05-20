@@ -1,6 +1,13 @@
-# delivery-event
+# Auction Simulator
 
-I'm currently working on a project aimed at developing an event-driven application called CAPS, which mimics a real-world delivery service. In this system, vendors will dispatch packages via CAPS, and drivers will ensure these packages reach customers. The entire setup will be powered by Node.js, leveraging its capabilities for building modular and real-time interactions across various system components.
+## Authors
 
-![UML](./Screenshot%202024-05-13%20at%203.14.50 PM.png)
-![UML day 2](./Screenshot%202024-05-14%20at%204.20.30 PM.png)
+**Amanda Marquez, Ryan Potts, Adam Jimenez, Jedidiah Staley**
+
+## Overview
+
+This is a simulation of a bidding website run on an event-driven server. There are two client types: bidders and sellers. By opening a git terminal in each of the three folders (server, clients/bidder, and clients/seller) and running `nodemon` in all three, the user will see console logs demonstrating connectivity and communication between the 3 servers.
+
+## UML Diagram
+
+![UML Diagram](./uml.png)
